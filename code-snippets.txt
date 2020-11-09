@@ -1,0 +1,55 @@
+Guided Exploration No. 3 Snippets file.
+
+Snippet 1
+================================
+# COMMENT THIS CODE
+import random
+
+Snippet 2
+================================
+# COMMENT THIS CODE
+possible_names = []
+
+Snippet 3
+================================
+# COMMENT THIS CODE
+outputFile = open('rap-names-output.txt', 'w')
+
+Snippet 4
+================================
+# COMMENT THIS CODE
+with open('rap-names.txt', 'r') as dataFile:
+    # COMMENT THIS CODE
+    for name in dataFile:
+        # COMMENT THIS CODE
+        possible_names.append(name.rstrip())
+
+Snippet 5
+================================
+# COMMENT THIS CODE
+count = int(input('How many rap names would you like to create? '))
+# COMMENT THIS CODE
+parts = int(input('How many parts should the name contain? '))
+
+Snippet 6
+================================
+# COMMENT THIS CODE
+for i in range(count):
+    # COMMENT THIS CODE
+    name_parts = []
+    # COMMENT THIS CODE
+    for j in range(parts):
+        # COMMENT THIS CODE
+        name_parts.append(possible_names[random.randint(0, len(possible_names)-1)])
+
+Snippet 7
+================================
+# COMMENT THIS CODE
+outputFile.write(f"{' '.join(name_parts)}\n")
+# COMMENT THIS CODE
+print(f"{' '.join(name_parts)}")
+
+Snippet 8
+================================
+# COMMENT THIS CODE
+outputFile.close()
